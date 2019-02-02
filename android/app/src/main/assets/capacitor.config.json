@@ -1,0 +1,6 @@
+{
+  "appId": "com.connecteddeveloper.quicklists",
+  "appName": "quicklists",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}
