@@ -78,8 +78,8 @@ export class ChecklistDataService {
 
   save(): void {}
 
-  generateSlug(title): string {
-    let slug = title.toLowerCase().replace(/s+/g, '-');
+  generateSlug(title: string): string {
+    let slug = title.toLowerCase().replace(/\s+/g, '-');
 
     const exists = this.checklists.filter((checklist) => {
       return checklist.id.substring(0, slug.length) === slug;
